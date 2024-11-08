@@ -1,10 +1,11 @@
 #include "libft.h"
 
-int     main(void)
+int	main(void)
 {
-        char    big[20] = "hello everyone";
-        char    little[3] = "eve";
-        size_t  len = 4;
+	char	s[10] = "hello ";
+	char	*v = NULL;
+	char	*str;
 
-        printf("%s\n", ft_strnstr(big, little, len));
+	str = ft_strjoin(s, v);
+	printf("%s\n", (char *)str);
 }
