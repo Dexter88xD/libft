@@ -6,7 +6,7 @@
 /*   By: sohamdan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 13:41:41 by sohamdan          #+#    #+#             */
-/*   Updated: 2024/11/09 11:02:47 by sohamdan         ###   ########.fr       */
+/*   Updated: 2024/11/09 22:12:56 by sohamdan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,13 +100,13 @@ char	**ft_split(char const *s, char c)
 
 	if (s == NULL)
 		return (NULL);
-	len = ft_count_words(s, c);
 	i = 0;
 	j = 0;
+	len = ft_count_words(s, c);
 	array = (char **)malloc((len + 1) * sizeof(char *));
 	if (array == NULL)
 		return (NULL);
-	while (s[i] == c)
+	while (s[i] && s[i] == c)
 		i++;
 	while (s[i] != '\0')
 	{

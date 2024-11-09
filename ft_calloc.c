@@ -6,7 +6,7 @@
 /*   By: sohamdan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 09:23:50 by sohamdan          #+#    #+#             */
-/*   Updated: 2024/10/26 17:22:36 by sohamdan         ###   ########.fr       */
+/*   Updated: 2024/11/09 23:34:47 by sohamdan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*holder;
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
 	holder = (void *)malloc(nmemb * size);
 	if (holder == NULL)
 		return (NULL);
