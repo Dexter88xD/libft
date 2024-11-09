@@ -6,14 +6,13 @@
 /*   By: sohamdan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:20:19 by sohamdan          #+#    #+#             */
-/*   Updated: 2024/11/06 21:50:17 by sohamdan         ###   ########.fr       */
+/*   Updated: 2024/11/09 05:05:36 by sohamdan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h>
 # include <ctype.h>
 # include <unistd.h>
 # include <stdlib.h>
