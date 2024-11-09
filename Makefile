@@ -35,9 +35,3 @@ fclean:
 	rm -f $(NAME) $(OBJECTS) $(BONUS_OBJECTS)
 
 re: fclean all
-
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(FILES)
-	gcc -nostartfiles -shared -o libft.so $(OBJECTS)
-
-
