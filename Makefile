@@ -25,8 +25,8 @@ $(NAME): $(OBJECTS)
 BONUS: $(BONUS_OBJECTS)
 	ar rcs $(NAME) $^
 
-#%.o : %.c
-#	$(CC) $(CFLAGS) -c $^ -o $@
+%.o : %.c
+	$(CC) $(CFLAGS) -c $^ -o $@
 
 clean:
 	rm -f $(OBJECTS) $(BONUS_OBJECTS)
@@ -35,3 +35,7 @@ fclean:
 	rm -f $(NAME) $(OBJECTS) $(BONUS_OBJECTS)
 
 re: fclean all
+
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(FILES)
+	gcc -nostartfiles -shared -o libft.so $(OBJECTS)
