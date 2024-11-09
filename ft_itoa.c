@@ -6,7 +6,7 @@
 /*   By: sohamdan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 20:40:45 by sohamdan          #+#    #+#             */
-/*   Updated: 2024/10/28 14:51:59 by sohamdan         ###   ########.fr       */
+/*   Updated: 2024/11/09 10:00:38 by sohamdan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,24 +47,24 @@ char	*ft_itoa(int n)
 	char	*s;
 	int		len;
 	int		len_len;
-	long	nn;
 
-	nn = (long)n;
 	len = len_iint(n);
 	len_len = len;
 	s = (char *)malloc((len + 1) * sizeof(char));
 	if (s == NULL)
 		return (NULL);
-	nn = ft_negative(s, nn);
-	if (nn >= 0 && nn <= 9)
+	if (n == -2147483648)
+		return ((char *)ft_memcpy(s, "-2147483648", 12));
+	n = ft_negative(s, n);
+	if (n >= 0 && n <= 9)
 	{
-		s[len - 1] = nn + 48;
-		nn /= 10;
+		s[len - 1] = n + 48;
+		n /= 10;
 	}
-	while (nn > 0)
+	while (n > 0)
 	{
-		s[len-- - 1] = (nn % 10) + 48;
-		nn /= 10;
+		s[len-- - 1] = (n % 10) + 48;
+		n /= 10;
 	}
 	s[len_len] = '\0';
 	return (s);

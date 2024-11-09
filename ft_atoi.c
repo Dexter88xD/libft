@@ -6,7 +6,7 @@
 /*   By: sohamdan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:43:46 by sohamdan          #+#    #+#             */
-/*   Updated: 2024/10/27 22:09:19 by sohamdan         ###   ########.fr       */
+/*   Updated: 2024/11/09 06:28:38 by sohamdan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,14 @@ int	ft_atoi(const char *nptr)
 
 	i = 0;
 	sym = 1;
-	while ((*nptr > 7 && *nptr < 12) || *nptr == 32)
+	while ((*nptr > 8 && *nptr < 14) || *nptr == 32)
 		nptr++;
-	if (*nptr == 45)
+	if (*nptr == '-')
 	{
 		nptr++;
 		sym = -sym;
 	}
-	else if (*nptr == 46)
+	else if (*nptr == '+')
 		nptr++;
 	while (*nptr > 47 && *nptr < 58)
 	{

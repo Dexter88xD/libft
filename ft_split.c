@@ -6,13 +6,13 @@
 /*   By: sohamdan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 13:41:41 by sohamdan          #+#    #+#             */
-/*   Updated: 2024/11/05 16:40:25 by sohamdan         ###   ########.fr       */
+/*   Updated: 2024/11/09 11:02:47 by sohamdan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_count_char(char const *s, char c, int *i, int *start)
+static int	ft_count_char(char const *s, char c, int *i, int *start)
 {
 	int	j;
 
@@ -29,14 +29,14 @@ int	ft_count_char(char const *s, char c, int *i, int *start)
 	return (j);
 }
 
-int	ft_allocate(char **array, char const *s, char c, int *i)
+static int	ft_allocate(char **array, char const *s, char c, int *i)
 {
 	int	j;
 	int	l;
 	int	start;
 
 	start = *i;
-	j = ft_count_char(s, c, &(*i), &start);
+	j = ft_count_char(s, c, i, &start);
 	l = 0;
 	if (j != 0)
 	{
@@ -78,43 +78,43 @@ static int	ft_count_words(char const *s, char c)
 	return (word);
 }
 
-void	ft_free(char **temp, char **array)
+static void	ft_free(char **array, int j)
 {
-	char	**end;
+	int	i;
 
-	end = temp;
-	while (temp < array)
+	i = 0;
+	while (i < j)
 	{
-		free(*temp);
-		(*temp)++;
+		free(array[i]);
+		i++;
 	}
-	free (end);
+	free (array);
 }
 
 char	**ft_split(char const *s, char c)
 {
 	char	**array;
-	char	**temp;
 	int		len;
 	int		i;
+	int		j;
 
 	if (s == NULL)
 		return (NULL);
 	len = ft_count_words(s, c);
 	i = 0;
+	j = 0;
 	array = (char **)malloc((len + 1) * sizeof(char *));
 	if (array == NULL)
 		return (NULL);
-	temp = array;
 	while (s[i] == c)
 		i++;
 	while (s[i] != '\0')
 	{
-		if (ft_allocate(array++, s, c, &i) == 0)
-			return (ft_free(temp, array), NULL);
+		if (ft_allocate(&array[j++], s, c, &i) == 0)
+			return (ft_free(array, j), NULL);
 		while (s[i] == c)
 			i++;
 	}
-	*array = NULL;
-	return (temp);
+	array[j] = NULL;
+	return (array);
 }
