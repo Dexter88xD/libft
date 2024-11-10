@@ -1,12 +1,36 @@
 #include "libft.h"
 #include <stdio.h>
 #include <bsd/string.h>
+
+void	ft_print_result(char const *s)
+{
+	int		len;
+
+	len = 0;
+	while (s[len])
+		len++;
+	write(1, s, len);
+}
+
+//
+/*
 int	main(void)
 {
-	char haystack[30] = "aaabcabcd";
-	char needle[10] = "aabc";
+	const char *str;
 
-	printf("their f: %s", strnstr(haystack, needle, 0)); 
+	if (!(str = ft_strnstr("lorem ipsum dolor sit amet", "dolor", 0)))
+			ft_print_result("NULL");
+		else
+			ft_print_result(str);
+}
+*/
+
+//LIBFT UNIT TEST MAIN
+
+int	main(void)
+{
+	char b[0xF] = "nyan !";
+
+	printf("their function:%zu", strlcat(((void*)0), b, 2));
 	printf("\n");
-	printf("my f   : %s", ft_strnstr(haystack, needle, 0));
 }
