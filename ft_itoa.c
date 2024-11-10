@@ -6,13 +6,13 @@
 /*   By: sohamdan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 20:40:45 by sohamdan          #+#    #+#             */
-/*   Updated: 2024/11/09 10:00:38 by sohamdan         ###   ########.fr       */
+/*   Updated: 2024/11/10 10:08:22 by sohamdan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_negative(char *s, long nn)
+static int	ft_negative(char *s, long nn)
 {
 	if (nn < 0)
 	{
@@ -22,7 +22,7 @@ int	ft_negative(char *s, long nn)
 	return (nn);
 }
 
-long	len_iint(long n)
+static long	len_iint(long n)
 {
 	int	i;
 

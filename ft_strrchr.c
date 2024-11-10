@@ -6,7 +6,7 @@
 /*   By: sohamdan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 21:13:33 by sohamdan          #+#    #+#             */
-/*   Updated: 2024/10/22 22:49:56 by sohamdan         ###   ########.fr       */
+/*   Updated: 2024/11/10 09:54:02 by sohamdan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *s, int c)
 	p = NULL;
 	while (*s)
 	{
-		if (s[i] == c)
+		if (s[i] == (unsigned char)c)
 			p = s;
 		s++;
 	}
