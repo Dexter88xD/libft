@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	compizz(const char c, const char *s)
+static int	compizz(const char c, const char *s)
 {
 	size_t	i;
 
