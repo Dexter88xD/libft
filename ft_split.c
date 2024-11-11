@@ -99,19 +99,3 @@ char	**ft_split(char const *s, char c)
 	result = ft_fill(result, (char *)s, c, word);
 	return (result);
 }
-/*
-int	main(void)
-{
-	char	*s;
-	char	c;
-
-	s = "hello everyone haha";
-	c = 0;
-	char	**str = ft_split(s,c);
-	printf("'%s'\n", str[0]);
-	printf("'%s'\n", str[1]);
-	printf("'%s'\n", str[2]);
-	printf("'%s'", str[3]);
-	printf("\n");
-}
-*/
