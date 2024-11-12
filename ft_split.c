@@ -6,12 +6,12 @@
 /*   By: sohamdan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 11:39:38 by sohamdan          #+#    #+#             */
-/*   Updated: 2024/11/12 00:06:40 by sohamdan         ###   ########.fr       */
+/*   Updated: 2024/11/12 01:40:22 by sohamdan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
+#include <stdio.h>
 
 static int	count_words(char *s, char c)
 {
@@ -35,8 +35,8 @@ static int	count_words(char *s, char c)
 
 static char	*ft_allocate(char const *s, int start, size_t len)
 {
-	char			*sub_sub;
-	int				i;
+	char	*sub_sub;
+	int		i;
 
 	i = 0;
 	sub_sub = (char *)malloc((len + 1) * sizeof(char));
