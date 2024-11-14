@@ -6,7 +6,7 @@
 /*   By: sohamdan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 11:39:38 by sohamdan          #+#    #+#             */
-/*   Updated: 2024/11/12 01:40:22 by sohamdan         ###   ########.fr       */
+/*   Updated: 2024/11/12 00:06:40 by sohamdan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,3 +99,20 @@ char	**ft_split(char const *s, char c)
 	result = ft_fill(result, (char *)s, c, word);
 	return (result);
 }
+/*
+int	main(void)
+{
+	char	*s;
+	char	c;
+	char	**str;
+
+	s = "hello everyone haha";
+	c = 0;
+	str = ft_split(s,c);
+	printf("'%s'\n", str[0]);
+	printf("'%s'\n", str[1]);
+	printf("'%s'\n", str[2]);
+	printf("'%s'", str[3]);
+	printf("\n");
+}
+*/

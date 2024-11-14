@@ -22,7 +22,7 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	ar rcs $(NAME) $^
 
-BONUS: $(BONUS_OBJECTS)
+bonus: $(BONUS_OBJECTS)
 	ar rcs $(NAME) $^
 
 %.o : %.c
