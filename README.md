@@ -3,12 +3,12 @@
 This is a personal library for useful C functions. It is part of the 42 coding school curriculum.
 
 ## Table of Contents
-- Introduction
-- Features
-- Installation
-- Usage
-- Contributing
-- License
+
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Introduction
 
