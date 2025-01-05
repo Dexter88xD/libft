@@ -2,6 +2,8 @@
 
 This is a personal library for useful C functions. It is part of the 42 coding school curriculum.
 
+---
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
@@ -10,13 +12,19 @@ This is a personal library for useful C functions. It is part of the 42 coding s
 - [Contributing](#contributing)
 - [License](#license)
 
+---
+
 ## Introduction
 
 `libft` is a collection of useful C functions that can be used to simplify programming tasks. This project is part of the 42 coding school curriculum.
 
+---
+
 ## Features
 
 - A variety of utility functions for string manipulation, memory allocation, and more.
+
+---
 
 ## Installation
 
@@ -28,6 +36,8 @@ cd libft
 make
 ```
 
+---
+
 ## Usage
 
 After compiling the library, you can include it in your C projects.
@@ -36,9 +46,13 @@ After compiling the library, you can include it in your C projects.
 #include "libft.h"
 ```
 
+---
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+---
 
 ## License
 
