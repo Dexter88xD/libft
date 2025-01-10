@@ -82,7 +82,6 @@
 
 The repository is organized into the following files:
 
-    Directory structure:
     └── Dexter88xD-libft/
         ├── README.md
         ├── LICENSE
