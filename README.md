@@ -1,6 +1,6 @@
 # libft
 
-`libft` is a custom C library that provides a wide range of utility functions. It includes standard library functions for string manipulation, memory management, and more, along with custom implementations of linked list operations. This library is commonly used in projects as a foundational set of tools for other C programs.
+`libft` is a custom C library that provides a wide range of utility functions. It includes standard library functions for string manipulation, memory management, and more, along with custom implementations of linked list operations.
 
 ---
 
