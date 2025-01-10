@@ -82,7 +82,8 @@
 
 The repository is organized into the following files:
 
-    └── Dexter88xD-libft/
+```
+└── Dexter88xD-libft/
         ├── README.md
         ├── LICENSE
         ├── Makefile
@@ -130,6 +131,7 @@ The repository is organized into the following files:
         ├── ft_tolower.c
         ├── ft_toupper.c
         └── libft.h
+```
 
 ---
 
